@@ -1,0 +1,74 @@
+{
+  "name": "@pqblocks/pqc-compat-registry",
+  "version": "1.0.0",
+  "description": "A machine-readable registry of NIST post-quantum algorithm identifiers (FIPS 203/204/205 OIDs) for compliance tooling.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./oid": {
+      "import": "./dist/oid_parser.js",
+      "types": "./dist/oid_parser.d.ts"
+    },
+    "./parameters": {
+      "import": "./dist/parameter_validator.js",
+      "types": "./dist/parameter_validator.d.ts"
+    },
+    "./slh-dsa": {
+      "import": "./dist/slh_validator.js",
+      "types": "./dist/slh_validator.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test --experimental-test-coverage tests/**/*.test.{js,mjs,ts}",
+    "test:unit": "node --test tests/**/*.test.js",
+    "lint": "tsc --noEmit"
+  },
+  "bin": {
+    "pqc-registry": "./bin/registry-cli.js"
+  },
+  "keywords": [
+    "post-quantum",
+    "pqc",
+    "ml-kem",
+    "registry",
+    "fips-203",
+    "fips-204",
+    "fips-205"
+  ],
+  "author": "The PQBlocks Authors",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PQBlocks/pqc-compat-registry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PQBlocks/pqc-compat-registry/issues"
+  },
+  "homepage": "https://github.com/PQBlocks/pqc-compat-registry#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist/",
+    "bin/",
+    "README.md",
+    "LICENSE",
+    "bin",
+    "types"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

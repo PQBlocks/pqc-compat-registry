@@ -1,0 +1,29 @@
+{
+  "source": "NIST ACVP FIPS 203 Table 3",
+  "test_vectors": [
+    {
+      "vector_id": "mlkem-0001",
+      "algorithm": "ml-kem-512",
+      "encapsulation_key": 800,
+      "decapsulation_key": 1632,
+      "ciphertext": 768,
+      "shared_secret": 32
+    },
+    {
+      "vector_id": "mlkem-0002",
+      "algorithm": "ml-kem-768",
+      "encapsulation_key": 1184,
+      "decapsulation_key": 2400,
+      "ciphertext": 1088,
+      "shared_secret": 32
+    },
+    {
+      "vector_id": "mlkem-0003",
+      "algorithm": "ml-kem-1024",
+      "encapsulation_key": 1568,
+      "decapsulation_key": 3168,
+      "ciphertext": 1568,
+      "shared_secret": 32
+    }
+  ]
+}

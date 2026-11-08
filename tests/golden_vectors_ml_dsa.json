@@ -1,0 +1,26 @@
+{
+  "source": "NIST ACVP FIPS 204 Table 2",
+  "test_vectors": [
+    {
+      "vector_id": "mldsa-0001",
+      "algorithm": "ml-dsa-44",
+      "private_key": 2560,
+      "public_key": 1312,
+      "signature": 2420
+    },
+    {
+      "vector_id": "mldsa-0002",
+      "algorithm": "ml-dsa-65",
+      "private_key": 4032,
+      "public_key": 1952,
+      "signature": 3309
+    },
+    {
+      "vector_id": "mldsa-0003",
+      "algorithm": "ml-dsa-87",
+      "private_key": 4896,
+      "public_key": 2592,
+      "signature": 4627
+    }
+  ]
+}
