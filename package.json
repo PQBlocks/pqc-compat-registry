@@ -31,7 +31,7 @@
     "lint": "tsc --noEmit"
   },
   "bin": {
-    "pqc-registry": "./bin/registry-cli.js"
+    "pqc-registry": "bin/registry-cli.js"
   },
   "keywords": [
     "post-quantum",
