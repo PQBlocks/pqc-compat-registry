@@ -13,7 +13,7 @@ describe('FIPS 203/204/205 Parameter Size Validation', function() {
   before(async function() {
     // Dynamic import to catch module load errors cleanly
     try {
-      validator = await import('../src/parameter_validator.ts');
+      validator = await import('../dist/parameter_validator.js');
       validate_parameter_sizes = validator.validate_parameter_sizes;
       get_expected_sizes = validator.get_expected_sizes;
       FIPS_TABLES = validator.FIPS_TABLES;

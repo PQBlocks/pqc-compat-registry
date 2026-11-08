@@ -15,7 +15,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { validate_parameter_sizes, validate_slh_dsa_sizes, algorithms } from '../src/index.ts';
+import { validate_parameter_sizes, validate_slh_dsa_sizes, algorithms } from '../dist/index.js';
 
 const LANE_DIR = fileURLToPath(new URL('..', import.meta.url));
 const TESTS_DIR = join(LANE_DIR, 'tests');

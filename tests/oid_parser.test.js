@@ -13,7 +13,7 @@ describe('OID Parsing and Validation', function() {
   before(async function() {
     // Dynamic import to catch module load errors cleanly
     try {
-      parser = await import('../src/oid_parser.ts');
+      parser = await import('../dist/oid_parser.js');
       parse_oid = parser.parse_oid;
       validate_oid = parser.validate_oid;
       get_oid_by_algorithm = parser.get_oid_by_algorithm;

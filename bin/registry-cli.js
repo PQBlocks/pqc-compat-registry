@@ -1,4 +1,4 @@
-import { parse_oid, validate_oid, get_oid_by_algorithm, validate_parameter_sizes, algorithms } from '../src/index.ts';
+import { parse_oid, validate_oid, get_oid_by_algorithm, validate_parameter_sizes, algorithms } from '../dist/index.js';
 
 const args = process.argv.slice(2);
 const cmd = args[0];

@@ -12,7 +12,7 @@ describe('Type re-export from public API', function() {
   it('should have AlgorithmSpec type available from public API', async function() {
     // Import from the main entry point - types should be re-exported
     // The AlgorithmSpec type should be usable for type checking
-    const module = await import('../src/index.ts');
+    const module = await import('../dist/index.js');
     assert.ok(module, 'Module should load successfully');
   });
 });
@@ -25,7 +25,7 @@ describe('Algorithm-related types structure', function() {
     // contains the necessary type definitions for algorithm specifications
     // We verify this by checking the actual implementation data matches
     // the type expectations
-    const module = await import('../src/index.ts');
+    const module = await import('../dist/index.js');
     const algorithms = module.algorithms;
     assert.ok(algorithms, 'algorithms should be exported');
     
@@ -63,7 +63,7 @@ describe('Types module exports', function() {
   it('should export necessary type interfaces from types/index.ts', async function() {
     // The types/index.ts file should define and export these types
     // We verify the module exists and has the expected exports
-    const typesModule = await import('../src/types/index.ts');
+    const typesModule = await import('../dist/types/index.js');
     assert.ok(typesModule, 'types/index.ts should be importable');
   });
 });

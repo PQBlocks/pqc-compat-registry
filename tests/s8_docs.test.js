@@ -10,8 +10,8 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { generateDocs } from '../src/docs_generator.ts';
-import { algorithms } from '../src/registry.ts';
+import { generateDocs } from '../dist/docs_generator.js';
+import { algorithms } from '../dist/registry.js';
 
 const LANE_DIR = fileURLToPath(new URL('..', import.meta.url));
 const DOCS_DIR = join(LANE_DIR, 'docs');

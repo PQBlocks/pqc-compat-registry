@@ -13,7 +13,7 @@ describe('Core Registry Data Structures', function() {
   before(async function() {
     // Dynamic import to catch module load errors cleanly
     try {
-      registry = await import('../src/registry.ts');
+      registry = await import('../dist/registry.js');
       algorithms = registry.algorithms;
     } catch (e) {
       // Expected in RED phase - registry.ts doesn't exist yet

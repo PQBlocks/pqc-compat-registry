@@ -1,8 +1,8 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { validate_parameter_sizes } from '../src/parameter_validator.ts';
-import { validate_slh_dsa_sizes } from '../src/slh_validator.ts';
+import { validate_parameter_sizes } from '../dist/parameter_validator.js';
+import { validate_slh_dsa_sizes } from '../dist/slh_validator.js';
 
 const mlkemVectors = JSON.parse(readFileSync(new URL('./golden_vectors_mlkem.json', import.meta.url), 'utf8'));
 const slhdsaVectors = JSON.parse(readFileSync(new URL('./golden_vectors_slhdsa.json', import.meta.url), 'utf8'));

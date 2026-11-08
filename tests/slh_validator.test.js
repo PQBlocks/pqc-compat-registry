@@ -13,7 +13,7 @@ let { validate_slh_dsa_sizes, get_expected_slh_sizes, SLH_DSA_TABLES } = {};
 describe('SLH-DSA (FIPS 205) Parameter Size Validation', function() {
   before(async function() {
     try {
-      validator = await import('../src/slh_validator.ts');
+      validator = await import('../dist/slh_validator.js');
       validate_slh_dsa_sizes = validator.validate_slh_dsa_sizes;
       get_expected_slh_sizes = validator.get_expected_slh_sizes;
       SLH_DSA_TABLES = validator.SLH_DSA_TABLES;
