@@ -26,12 +26,13 @@
   },
   "scripts": {
     "build": "tsc",
+    "prepare": "tsc",
     "test": "node --test",
     "test:unit": "node --test tests/**/*.test.js",
     "lint": "tsc --noEmit"
   },
   "bin": {
-    "pqc-registry": "bin/registry-cli.js"
+    "pqc-registry": "./bin/registry-cli.js"
   },
   "keywords": [
     "post-quantum",
@@ -42,7 +43,11 @@
     "fips-204",
     "fips-205"
   ],
-  "author": "The PQBlocks Authors",
+  "author": "Govind Dubey <govinddubeycse@gmail.com> (PQBlocks)",
+  "contributors": [
+    "Govind Dubey <govinddubeycse@gmail.com>",
+    "The PQBlocks Authors"
+  ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
