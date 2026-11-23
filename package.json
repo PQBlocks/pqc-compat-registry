@@ -43,9 +43,9 @@
     "fips-204",
     "fips-205"
   ],
-  "author": "Govind Dubey <govinddubeycse@gmail.com> (PQBlocks)",
+  "author": "Govind Dubey <govinddubeycse+pqblocks@gmail.com> (PQBlocks)",
   "contributors": [
-    "Govind Dubey <govinddubeycse@gmail.com>",
+    "Govind Dubey <govinddubeycse+pqblocks@gmail.com>",
     "The PQBlocks Authors"
   ],
   "license": "Apache-2.0",
